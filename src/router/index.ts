@@ -12,23 +12,19 @@ const routes = [
   { path: "/proyectos", component: Proyectos },
   { path: "/nosotros", component: Nosotros },
   { path: "/contacto", component: Contacto },
+  { path: "/:pathMatch(.*)*", redirect: "/" },
 ];
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
+
   routes,
 
-  // Volver al principio al cambiar de página
-  scrollBehavior(_to, _from, savedPosition) {
-    if (savedPosition) {
-      return { top: 0, left: 0 };
-    }
-
+  scrollBehavior() {
     return {
       top: 0,
       left: 0,
       behavior: "smooth",
-      //behavior: "instant",
     };
   },
 });
