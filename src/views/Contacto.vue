@@ -1,8 +1,22 @@
-<script setup lang="ts"></script>
-<template>
-  <div  class="flex flex-col items-center  h-screen">
-    <h1>Bienvenido a Contacto</h1>
-  </div>
-</template>
 
-<style scoped></style>
+<script setup lang="ts">
+import ContactForm from '../components/ContactForm.vue'
+
+interface ContactData {
+  name: string
+  email: string
+  phone: string
+  subject: string
+  message: string
+}
+
+const handleContact = (data: ContactData) => {
+  console.log('Datos del formulario:', data)
+
+  // Aquí conectarás tu backend o servicio de correo.
+}
+</script>
+
+<template>
+  <ContactForm @submit="handleContact" />
+</template>

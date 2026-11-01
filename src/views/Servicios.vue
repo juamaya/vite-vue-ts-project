@@ -7,7 +7,7 @@ const projects = [
     title: 'Diseño digital',
     description: 'Creamos experiencias digitales modernas, intuitivas y atractivas para todo tipo de proyectos.',
     image: 'https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=900&q=80',
-    link: '/servicios'
+    link: '/proyectos'
   },
   {
     title: 'Desarrollo web',
@@ -19,7 +19,7 @@ const projects = [
     title: 'Creatividad',
     description: 'Convertimos ideas innovadoras en productos digitales con personalidad propia.',
     image: 'https://images.unsplash.com/photo-1497366754035-f200968a6e72?auto=format&fit=crop&w=900&q=80',
-    link: '/nosotros'
+    link: '/proyectos'
   }
 ]
 </script>
