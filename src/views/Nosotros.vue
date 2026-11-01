@@ -32,23 +32,25 @@ const values = [
   }
 ]
 
+const  juan = `${import.meta.env.BASE_URL}juan.jpg`;
+const  madre = `${import.meta.env.BASE_URL}MADRE.jpg`;
 const team = [
   {
     name: 'Alex Morgan',
     role: 'Director creativo',
-    image: 'photo-1560250097-0b93528c311a',
+    image:  madre ,
     description: 'Lidera la visión creativa y estratégica.'
   },
   {
     name: 'Sophia Williams',
     role: 'Diseñadora UI/UX',
-    image: 'photo-1573496359142-b8d87734a5a2',
+    image:  juan ,
     description: 'Diseña experiencias digitales intuitivas.'
   },
   {
     name: 'Daniel Carter',
     role: 'Desarrollador web',
-    image: 'photo-1500648767791-00dcc994a43e',
+    image:  madre ,
     description: 'Convierte ideas en soluciones tecnológicas.'
   }
 ]
@@ -273,14 +275,11 @@ const steps = [
         </div>
 
         <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-8">
-          <article v-for="person in team" :key="person.name" class="group
-ChatGPT es una IA y puede equivocarse.
-
-                   overflow-hidden rounded-3xl bg-gray-50 dark:bg-[#151827] border border-gray-200 dark:border-white/5 hover:-translate-y-2 hover:shadow-xl transition-all duration-500">
+          <article v-for="person in team" :key="person.name" class="group overflow-hidden rounded-3xl bg-gray-50 dark:bg-[#151827] border border-gray-200 dark:border-white/5 hover:-translate-y-2 hover:shadow-xl transition-all duration-500">
 
             <div class="relative overflow-hidden h-87.5">
               <img
-                :src="`https://images.unsplash.com/${person.image}?auto=format&fit=crop&w=800&q=85`"
+                :src="person.image"
                 :alt="person.name"
                 loading="lazy"
                 class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"
