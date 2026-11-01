@@ -81,7 +81,7 @@ const { isDark, toggleTheme } = useTheme()
   <Transition name="theme-icon" mode="out-in">
     <span
       :key="isDark"
-      class="text-xl"
+      class="text-xl cursor-pointer"
     >
       {{ isDark ? '☀️' : '🌙' }}
     </span>
