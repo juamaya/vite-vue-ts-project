@@ -3,7 +3,7 @@ import { ref } from "vue";
 import { RouterLink } from "vue-router";
 import Avatar from "./Avatar.vue";
 
-const avatarImage = `${import.meta.env.BASE_URL}juan.jpg`;
+const avatarImage = `${import.meta.env.BASE_URL}images/juan.jpg`;
 const currentYear = new Date().getFullYear();
 
 const email = ref("");

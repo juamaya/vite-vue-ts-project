@@ -32,25 +32,26 @@ const values = [
   }
 ]
 
-const  juan = `${import.meta.env.BASE_URL}juan.jpg`;
-const  madre = `${import.meta.env.BASE_URL}MADRE.jpg`;
+const  juan = `${import.meta.env.BASE_URL}images/juan.jpg`;
+const  madre = `${import.meta.env.BASE_URL}images/madre.jpg`;
+const  padre = `${import.meta.env.BASE_URL}images/padre.jpg`;
 const team = [
   {
     name: 'Alex Morgan',
     role: 'Director creativo',
-    image:  madre ,
+    image: padre ,
     description: 'Lidera la visión creativa y estratégica.'
   },
   {
     name: 'Sophia Williams',
     role: 'Diseñadora UI/UX',
-    image:  juan ,
+    image:  madre ,
     description: 'Diseña experiencias digitales intuitivas.'
   },
   {
     name: 'Daniel Carter',
     role: 'Desarrollador web',
-    image:  madre ,
+    image:  juan ,
     description: 'Convierte ideas en soluciones tecnológicas.'
   }
 ]
