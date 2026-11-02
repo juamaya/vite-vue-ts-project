@@ -90,7 +90,7 @@ const socialLinks = [
                 href="mailto:hola@nex.com"
                 class="hover:text-indigo-400 transition"
               >
-                hola@nex.com
+                micorreo@gmail.com
               </a>
             </li>
 

@@ -206,7 +206,7 @@ const handleSubmit = async () => {
                     href="mailto:hola@nex.com"
                     class="text-sm font-semibold hover:text-indigo-200"
                   >
-                    hola@juamayanex.com
+                    micorreo@gmail.com
                   </a>
                 </div>
               </div>
